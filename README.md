@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW3 E-SPORTS ORG | Official Links</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* লোগোর ব্যাকগ্রাউন্ড অনুযায়ী কালার প্যালেট */
+            --bg-color: #cbdcf2; /* লোগোর মেইন লাইট ব্লু ব্যাকগ্রাউন্ড */
+            --card-bg: #e1ecf7;  /* কার্ডের জন্য একটু হালকা ব্লু */
+            --btn-dark: #201e43; /* লোগোর ভেতরের নেভি ব্লু শেড */
+            --primary-blue: #5487cf; /* লোগোর উইংসের নীল বর্ডার শেড */
+            --accent-glow: rgba(84, 135, 207, 0.4);
+            --text-dark: #1a2536; /* ডার্ক টেক্সট লাইট ব্যাকগ্রাউন্ডের জন্য */
+            --text-muted: #52627a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            font-family: 'Hind Siliguri', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-bottom: 30px;
+            /* লোগোর ব্যাকগ্রাউন্ডের মতো হুবহু গ্রেডিয়েন্ট */
+            background: linear-gradient(135deg, #e4effc 0%, #b3cde9 100%);
+        }
+
+        /* Top Notice Bar matching the theme */
+        .notice-bar {
+            width: 100%;
+            background: linear-gradient(90deg, #201e43, #3a5b8c);
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .avatar-glow {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border: 4px solid var(--btn-dark); /* লোগোর নেভি ব্লু বর্ডার */
+            box-shadow: 0 8px 25px rgba(32, 30, 67, 0.25);
+            overflow: hidden;
+        }
+
+        .avatar-glow img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .org-title {
+            font-family: 'Teko', sans-serif;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            color: var(--btn-dark);
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+        }
+
+        .org-description {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .highlight-text {
+            color: #2b5694; /* লোগো থিম ব্লু */
+            font-weight: 700;
+        }
+
+        /* Buttons Section */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 35px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid transparent;
+        }
+
+        /* WhatsApp/Vibrant Buttons - Styled with Logo Dark Navy */
+        .btn-theme-dark {
+            background: linear-gradient(135deg, #201e43 0%, #34316c 100%);
+            color: white;
+            box-shadow: 0 5px 15px rgba(32, 30, 67, 0.2);
+        }
+
+        .btn-theme-dark:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(32, 30, 67, 0.4);
+        }
+
+        /* Secondary Glass-Style Light Buttons */
+        .btn-theme-light {
+            background-color: var(--card-bg);
+            color: var(--btn-dark);
+            border: 2px solid #aec4de;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-theme-light:hover {
+            background-color: #d2e1f2;
+            border-color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        /* Admin Contact Card */
+        .admin-card {
+            background-color: var(--card-bg);
+            border-radius: 18px;
+            padding: 22px;
+            border: 2px solid #b8cee7;
+            border-top: 4px solid var(--btn-dark);
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+        }
+
+        .admin-card h3 {
+            color: var(--btn-dark);
+        }
+
+        .admin-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 14px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--btn-dark);
+            font-weight: 700;
+            margin-top: 12px;
+            border: 1px solid #d0dfef;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: 0.2s;
+        }
+
+        .admin-row:hover {
+            background-color: #f7faff;
+            border-color: var(--primary-blue);
+        }
+
+        footer {
+            font-size: 11px;
+            color: #72839c;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notice-bar">
+        <i class="fas fa-info-circle"></i> লিংক কাজ না করলে ব্রাউজারের ৩ ডটে ক্লিক করে "Open in Browser" দিন।
+    </div>
+
+    <div class="container">
+        
+        <!-- প্রোফাইল সেকশন -->
+        <div class="profile-container">
+            <div class="avatar-glow">
+                <!-- আপনার লোগো ফাইলটির নাম main logo_2.jpg এখানে দেওয়া হয়েছে -->
+                <img src="main logo_2.jpg" alt="WW3 E-SPORTS ORG Logo">
+            </div>
+            <h1 class="org-title">WW3<br>E-SPORTS ORG</h1>
+            <p class="org-description">
+                এলিট লেভেলের গেমিং এক্সপেরিয়েন্স পেতে আমাদের <br>
+                <span class="highlight-text">Daily T1, Scrims & Live Tournaments</span>-এ জয়েন করুন।
+            </p>
+        </div>
+
+        <!-- বাটন সমূহ -->
+        <div class="links-wrapper">
+            <a href="https://whatsapp.com/channel/0029VbBysid7IUYWjkVMFn2T" target="_blank" class="btn-link btn-theme-dark">
+                <i class="fab fa-whatsapp"></i> JOIN WHATSAPP CHANNEL
+            </a>
+
+            <a href="https://chat.whatsapp.com/DBAQ6ur89dxE2XzJCDPSyF" target="_blank" class="btn-link btn-theme-dark">
+                <i class="fas fa-users"></i> JOIN WHATSAPP GROUP
+            </a>
+
+            <a href="https://youtube.com/@ww3e-sportsorganization" target="_blank" class="btn-link btn-theme-light">
+                <i class="fab fa-youtube" style="color: #ff0000;"></i> YOUTUBE CHANNEL
+            </a>
+
+            <a href="https://www.facebook.com/share/18kR1x8g32/" target="_blank" class="btn-link btn-theme-light">
+                <i class="fab fa-facebook-f" style="color: #1877f2;"></i> FACEBOOK PAGE
+            </a>
+        </div>
+
+        <!-- এডমিন সেকশন -->
+        <div class="admin-card">
+            <h3 style="font-size: 18px; letter-spacing: 1px; font-weight: 700;"><i class="fas fa-user-shield"></i> CONTACT ADMINS</h3>
+            <a href="https://wa.me/8801581209699" target="_blank" class="admin-row">
+                <span>Sakib (Admin)</span>
+                <i class="fab fa-whatsapp" style="color: #25D366; font-size: 20px;"></i>
+            </a>
+            <div style="font-size: 13px; color: var(--text-muted); margin-top: 15px; font-weight: 600;">
+                যেকোনো টেকনিক্যাল সাপোর্টের জন্য: <br>
+                <a href="https://wa.me/8801581209699" style="color: #1d723a; text-decoration: none; font-weight: 700;">+880 1581-209699</a>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 WW3 E-SPORTS ORG | ESTABLISHED FOR ELITES
+        </footer>
+
+    </div>
+
+</body>
+</html>
